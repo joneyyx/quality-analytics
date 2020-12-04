@@ -1,0 +1,19 @@
+apply plugin : 'scala'
+apply plugin: 'idea'
+
+version = '1.0.0'
+
+dependencies {
+    compile([
+            deps.scala,
+            deps.guava,
+            deps.spark,
+            deps.sparkSql
+    ])
+
+
+    compileOnly([
+    ])
+
+    testImplementation 'junit:junit:4.12'
+}
